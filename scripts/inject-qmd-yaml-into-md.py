@@ -44,13 +44,21 @@ def extract_yaml_from_qmd(path: Path) -> str:
 
 
 def extract_body_from_quartos_md(text: str) -> str:
-    """Return the body of the doc (from first ## heading to end). Quarto GFM
-    outputs: # Title\nAuthor\nDate\n\n## First section..."""
+    """Return the body of the doc. Quarto GFM outputs:
+    # Title\nAuthor\nDate\n\nintro...\n\n## Section...
+    We skip the first # line and author/date until a blank line, then keep the rest."""
     lines = text.splitlines()
-    for i, line in enumerate(lines):
-        if line.strip().startswith("##"):
-            return "\n".join(lines[i:])
-    return "\n".join(lines)
+    i = 0
+    # Skip first line if it's a single # title
+    if lines and lines[0].strip().startswith("# ") and not lines[0].strip().startswith("##"):
+        i = 1
+    # Skip author/date lines until blank line
+    while i < len(lines) and lines[i].strip() != "":
+        i += 1
+    # Skip the blank line
+    if i < len(lines) and lines[i].strip() == "":
+        i += 1
+    return "\n".join(lines[i:]) if i < len(lines) else ""
 
 
 def process_post_dir(dir_path: Path) -> None:
