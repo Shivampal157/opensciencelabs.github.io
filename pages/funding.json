@@ -96,7 +96,7 @@
       "name": "ArtBox",
       "description": "Artbox is a tool that handles multimedia files processing, such as conversion from speech to text and vice versa.",
       "webpageUrl": {
-        "url": "https://osl-incubator.github.io/artbox"
+        "url": "https://mediatoolbox-org.github.io/artbox"
       },
       "repositoryUrl": {
         "url": "https://github.com/osl-incubator/artbox",
