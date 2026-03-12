@@ -23,7 +23,8 @@ groups:
             find "$SEARCH_DIR" -name "*.qmd" -exec sh -c \
               'dir=$(dirname "$0"); base=$(basename "$0" .qmd); (cd "$dir" && quarto render "$base.qmd" --to gfm)' {} \;
           else
-            echo "[WW] Quarto is not available on PATH; .qmd files will not be rendered."
+            echo "[EE] Quarto is not available on PATH; .qmd files will not be rendered."
+            exit 1
           fi
 
           # 3) Remove console colors from generated md files
