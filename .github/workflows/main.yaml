@@ -54,8 +54,15 @@ jobs:
           poetry install
           python -m nltk.downloader punkt
 
+      # Render blog .qmd → .md so Build uses correct index.md (with YAML)
+      - name: Pre-build blog (quarto + inject)
+        run: makim pages.pre-build
+
+      # Skip mkdocs-build in pre-commit so we don't fail when repo's md != pre-build output
       - name: Linter
         if: ${{ github.event_name == 'pull_request' }}
+        env:
+          PRE_COMMIT_SKIP: mkdocs-build
         run: |
           pre-commit install
           pre-commit run --all-files --verbose
