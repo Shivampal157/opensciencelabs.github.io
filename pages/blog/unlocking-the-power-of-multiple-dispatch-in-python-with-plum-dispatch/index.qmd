@@ -13,6 +13,9 @@ description: |
   comes into play.
 thumbnail: "/header.png"
 template: "blog-post.html"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 Python, known for its simplicity and readability, sometimes requires a bit of creativity when it comes to implementing certain programming paradigms. One such paradigm is multiple dispatch (or multimethods), which allows functions to behave differently based on the type of their arguments. While not natively supported in Python, this feature can be incredibly powerful, particularly in complex applications such as mathematical computations, data processing, or when working with abstract syntax trees (ASTs). This is where `plum-dispatch` comes into play.
 

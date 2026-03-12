@@ -9,6 +9,9 @@ description: |
     Recently, console-based AST representation was included in the ASTx framework. Such feature can enhance the debugging and analysis capabilities of ASTx, particularly in environments such as a pdb session. In this tutorial, we'll explore this new feature as well as the ASTx Graphviz visualization.
 thumbnail: "/header.png"
 template: "blog-post.html"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 # Introduction
 

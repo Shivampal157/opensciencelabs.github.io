@@ -8,6 +8,9 @@ categories: ["Internship", "Backend"]
 description: "This blog post summarizes my internship in backend development at Open Science Labs with Ivan Ogasawara as my mentor and supervisor!"
 thumbnail: "/header.png"
 template: "blog-post.html"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 
 # About Me

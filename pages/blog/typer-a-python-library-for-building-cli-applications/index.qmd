@@ -12,6 +12,9 @@ description: |
   like type hints, to define CLI commands in a straightforward and intuitive way.
 thumbnail: "/header.svg"
 template: "blog-post.html"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 # Typer: A Python Library for Building CLI Applications
 

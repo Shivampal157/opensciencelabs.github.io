@@ -20,7 +20,9 @@ description: |
   provides a brief overview of the basic features of Dask.
 thumbnail: /image.png
 template: blog-post.html
-
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 # Scaling Python Data Analysis with Dask
 

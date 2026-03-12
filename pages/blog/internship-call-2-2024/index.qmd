@@ -21,6 +21,9 @@ description: >
   Network.
 thumbnail: "/header.jpg"
 template: "blog-post.html"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 
 <style>

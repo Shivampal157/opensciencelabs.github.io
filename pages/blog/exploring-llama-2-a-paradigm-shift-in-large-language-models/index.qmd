@@ -19,7 +19,9 @@ description: |
   performance and a commitment to ethical research practices.
 thumbnail: /header.png
 template: blog-post.html
-
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 
 

@@ -19,13 +19,12 @@ groups:
 
           # 2) Convert .qmd blog posts to Markdown using Quarto
           #    Run quarto render from inside each blog folder (Quarto rejects --output path).
-          if command -v quarto >/dev/null 2>&1; then
-            find "$SEARCH_DIR" -name "*.qmd" -exec sh -c \
-              'dir=$(dirname "$0"); base=$(basename "$0" .qmd); (cd "$dir" && quarto render "$base.qmd" --to gfm)' {} \;
-          else
-            echo "[EE] Quarto is not available on PATH; .qmd files will not be rendered."
+          if ! command -v quarto >/dev/null 2>&1; then
+            echo "[EE] Quarto CLI is required but not found on PATH. Install it (e.g. conda install quarto) and retry."
             exit 1
           fi
+          find "$SEARCH_DIR" -name "*.qmd" -exec sh -c \
+            'dir=$(dirname "$0"); base=$(basename "$0" .qmd); (cd "$dir" && quarto render "$base.qmd" --to gfm)' {} \;
 
           # 3) Remove console colors from generated md files
           find "$SEARCH_DIR" -name \

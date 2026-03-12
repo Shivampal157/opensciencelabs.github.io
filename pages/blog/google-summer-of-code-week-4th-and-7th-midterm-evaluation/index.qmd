@@ -9,6 +9,9 @@ description: |
   In this article, I will share the progress for Week 4th week to 7th week for my
   contribution to Open-science labs as a part of Google Summer of Code 2023.
 thumbnail: "/GSoC-Vertical.png"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 
 ## Google Summer of Code- Week 4th & 7th Midterm Evaluation

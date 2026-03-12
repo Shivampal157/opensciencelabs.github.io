@@ -8,6 +8,9 @@ categories: ["Google Summer of Code", "GSoC"]
 description: "This blog post summarizes my open source experience, right from my very first open source contribution to getting selected for GSoC and completing my Google Summer of Code project!"
 thumbnail: "/header.png"
 template: "blog-post.html"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 
 # About Me

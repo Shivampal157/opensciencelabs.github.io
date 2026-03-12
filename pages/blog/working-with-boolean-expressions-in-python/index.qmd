@@ -12,6 +12,9 @@ description: |
   We'll apply it to medical symptom data as an illustrative example.
 thumbnail: "/header.png"
 template: "blog-post.html"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 # Working with Boolean Expressions in Python
 

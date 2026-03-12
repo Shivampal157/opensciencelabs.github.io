@@ -13,6 +13,9 @@ description: |
   while adhering to industry standards.
 thumbnail: "/header.jpeg"
 template: "blog-post.html"
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 # SciCookie
 
