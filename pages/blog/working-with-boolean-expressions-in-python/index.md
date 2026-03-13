@@ -13,7 +13,6 @@ description: |
 thumbnail: "/header.png"
 template: "blog-post.html"
 ---
-# Working with Boolean Expressions in Python
 
 Boolean logic is a crucial component in many programming tasks, especially in searching and querying data. In this tutorial, we'll explore how to use `boolean.py`, a Python library, for handling Boolean expressions. We'll apply it to medical symptom data as an illustrative example.
 

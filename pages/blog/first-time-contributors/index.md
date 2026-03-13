@@ -10,7 +10,6 @@ description: |
 thumbnail: "/header.jpeg"
 template: "blog-post.html"
 ---
-Diving into project development can be overwhelming for beginners. A first-timers guide is key to navigate this unfamiliar terrain. From understanding basics to mastering tools, it'll help you contribute effectively. Join us as we explore how to get started in a development project!
 
 ### Avoiding Issues in Your First Contributions
 

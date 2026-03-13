@@ -10,7 +10,6 @@ description: |
 thumbnail: "/header.jpg"
 template: "blog-post.html"
 ---
-# How to use it?
 
 ## What is ArtBox?
 

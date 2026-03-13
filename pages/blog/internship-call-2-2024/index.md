@@ -16,8 +16,9 @@ categories:
   - Mentors
   - Technology Students
 description: >
-  The Open Science Labs (OSL) has announced its Internship and Learning Program
-  for the second cycle of 2024, in collaboration with The GRAPH Network.
+  The Open Science Labs (OSL) has announced its Internship and
+  Learning Program for the second cycle of 2024, in collaboration with The GRAPH
+  Network.
 thumbnail: "/header.jpg"
 template: "blog-post.html"
 ---

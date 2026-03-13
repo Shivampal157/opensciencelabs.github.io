@@ -1,7 +1,14 @@
-# Open Science Labs is participating in the Google Summer of Code 2025
-as a Mentoring Organization!
-Open Science Labs Team
-2025-03-01
+---
+title: "Open Science Labs is participating in the Google Summer of Code 2025 as a Mentoring Organization!"
+slug: open-science-labs-participating-google-summer-of-code-2025-mentoring-organization
+date: 2025-03-01
+authors: ["Open Science Labs Team"]
+tags: [google summer of code, gsoc, open-source, open-science]
+categories: [open-source, gsoc]
+description: |
+  Open Science Labs (OSL) is participating as a mentoring organization in Google Summer of Code (GSoC) 2025 for the first time. Students and newcomers can join open-source projects, connect with mentors, and apply via the GSoC website. Visit the official page of OSL or Discord for details.
+thumbnail: "/gsoc_osl.png"
+---
 
 ## Open Science Labs is participating in the Google Summer of Code 2025 as a Mentoring Organization!
 

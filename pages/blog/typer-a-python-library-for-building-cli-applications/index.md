@@ -13,7 +13,6 @@ description: |
 thumbnail: "/header.svg"
 template: "blog-post.html"
 ---
-# Typer: A Python Library for Building CLI Applications
 
 ## What is Typer?
 

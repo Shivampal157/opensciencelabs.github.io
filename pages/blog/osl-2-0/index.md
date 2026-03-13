@@ -1,6 +1,14 @@
-# OSL 2.0
-Ivan Ogasawara
-2026-01-19
+---
+title: "OSL 2.0"
+slug: osl-2-0
+date: 2026-01-19
+authors: ["Ivan Ogasawara"]
+tags: [osl]
+categories: [osl]
+description: |
+  OSL 2.0 is a new chapter—and an open invitation. If you believe in Growth, Collaboration, and Impact, there's a place for you here: to learn in public, contribute to real projects, and grow into a leader who helps others do the same. Whether you're a student, a researcher, a maintainer, or simply someone who cares about open source and open science, we'd love to meet you. Read our mission, join the conversation, and take your first step with us—one small contribution can become a life-changing journey.
+thumbnail: "/header.png"
+---
 
 ## OSL 2.0
 

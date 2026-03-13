@@ -15,7 +15,6 @@ description: |
 thumbnail: "/header.png"
 template: "blog-post.html"
 ---
-# Streamlining Project Automation with Makim
 
 In software development, where efficiency, consistency, and reliability are paramount, automation tools play a crucial role. Makim, an innovative open-source tool, steps into the spotlight to improve automation workflows. It simplifies script execution, environment management, and task dependencies, positioning itself as a great asset in modern development environments.
 

@@ -15,6 +15,10 @@ thumbnail: "/header.png"
 template: "blog-post.html"
 ---
 
+thumbnail: "/header.png"
+template: "blog-post.html"
+---
+
 <!-- # Plotting ternary phase diagrams for solving thermodynamics problems using fqlearn -->
 
 An article on how to use the open source Fqlearn library to plot three phase

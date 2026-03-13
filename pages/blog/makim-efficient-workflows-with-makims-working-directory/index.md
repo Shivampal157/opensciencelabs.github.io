@@ -15,7 +15,6 @@ description: |
 thumbnail: "/header.jpg"
 template: "blog-post.html"
 ---
-# **Efficent Workflows with Makim's Working Directory**
 
 Welcome to the world of [Makim](https://github.com/osl-incubator/makim), your go-to command-line companion for project automation. In our ongoing effort to enhance Makim's capabilities, we've introduced an exciting new feature—the Working Directory. This feature brings a new level of control and flexibility to your project workflows.
 
