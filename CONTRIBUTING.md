@@ -82,6 +82,37 @@ dependencies and activate it.
    - Run `makim pages.build` to render `index.qmd` to `index.md` and build the
      site. The generated `index.md` is used to render the webpage.
 
+### Regenerating blog Markdown (for CI)
+
+CI expects the rendered `index.md` files under `pages/blog/*/` to be committed.
+If you change `.qmd` content or metadata, regenerate and push the markdown:
+
+```bash
+# From repo root with conda env active (e.g. on WSL or Linux)
+$ makim pages.pre-build
+$ git add pages/blog/*/index.md
+$ git commit -m "chore: sync rendered blog index.md from qmd"
+$ git push
+```
+
+On Windows, use WSL or a Linux environment so `makim pages.pre-build` (Quarto) runs correctly.
+
+### Commit messages
+
+Keep commit messages professional and descriptive. Do not add tool or editor tags
+(e.g. "Made-with: Cursor") to commit messages.
+
+To fix existing commits that contain such a line (e.g. before pushing a PR):
+
+```bash
+# Rebase the last N commits (replace 3 with how many need fixing)
+$ git rebase -i HEAD~3
+# In the editor, change 'pick' to 'reword' for each commit whose message you want to fix. Save and close.
+# For each chosen commit, Git will open the message: remove the "Made-with: ..." line, save and close.
+# Then force-push your branch (only for your own PR branch):
+$ git push --force-with-lease
+```
+
 ## Final Steps
 
 Before submitting your blog post:
